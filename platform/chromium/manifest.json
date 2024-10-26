@@ -17,7 +17,8 @@
       "https://commons.wikimedia.org/*",
       "https://*.publicdomainpictures.net/*",
       "https://www.waifu.im/*",
-      "https://api.waifu.pics/*"
+      "https://api.waifu.pics/*",
+      "https://pic.re/*"
   ],
   "icons": {
     "16": "/images/icon-16.png",

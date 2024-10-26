@@ -19,7 +19,7 @@ A browser extension to create and solve jigsaw puzzles.
 
 ## Picture feeds
 
-The extension can fetch random pictures from different feeds. Currently it can fetch from [Wikimedia Commons](https://commons.wikimedia.org/), [Public Domain Pictures](https://www.publicdomainpictures.net/), [waifu.im](https://www.waifu.im/), and [waifu.pics](https://waifu.pics/).
+The extension can fetch random pictures from different feeds. Currently it can fetch from [Wikimedia Commons](https://commons.wikimedia.org/), [Public Domain Pictures](https://www.publicdomainpictures.net/), [waifu.im](https://www.waifu.im/), [waifu.pics](https://waifu.pics/), and [pic.re](https://pic.re).
 
 **Important:** Firefox version 126.0 and below requires that you explicitly grant permissions to be able fetch pictures from remote servers:
 
