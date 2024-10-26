@@ -16,7 +16,8 @@
   "host_permissions": [
       "https://commons.wikimedia.org/*",
       "https://*.publicdomainpictures.net/*",
-      "https://www.waifu.im/*"
+      "https://www.waifu.im/*",
+      "https://api.waifu.pics/*"
   ],
   "icons": {
     "16": "/images/icon-16.png",

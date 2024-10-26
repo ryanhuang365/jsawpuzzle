@@ -342,6 +342,9 @@ async function fetchRandomPicture(source) {
     case 'waifuim':
         module = await import(`./feeds/waifuim.js`);
         break;
+    case 'waifupics':
+        module = await import(`./feeds/waifupics.js`);
+        break;
     }
     const picture = await module.getRandomPicture();
     if ( picture instanceof Object === false ) { return; }
