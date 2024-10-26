@@ -19,7 +19,7 @@ A browser extension to create and solve jigsaw puzzles.
 
 ## Picture feeds
 
-The extension can fetch random pictures from different feeds. Currently it can fetch from [Wikimedia Commons](https://commons.wikimedia.org/) and [Public Domain Pictures](https://www.publicdomainpictures.net/).
+The extension can fetch random pictures from different feeds. Currently it can fetch from [Wikimedia Commons](https://commons.wikimedia.org/), [Public Domain Pictures](https://www.publicdomainpictures.net/), and [waifu.im](https://www.waifu.im/).
 
 **Important:** Firefox version 126.0 and below requires that you explicitly grant permissions to be able fetch pictures from remote servers:
 
@@ -28,6 +28,32 @@ The extension can fetch random pictures from different feeds. Currently it can f
 ## To build the extension
 
 At the command line, type `make firefox` or `make chromium` to build the extension for either Firefox or Chromium. A `jsawpuzzle.firefox` or `jsawpuzzle.chromium` folder will appear under `./build/`, which can be side-loaded as an extension in Firefox or Chromium.
+
+### Adding to Chrome
+
+1. Go to <chrome://extensions/>
+2. Toggle on `Developer mode`
+3. Click `Load unpacked` and select the `./build/jsawpuzzle.chromium` folder
+
+### Debugging on Firefox
+
+> Since this is a temporary add-on, it will be automatically removed once Firefox terminates.
+
+1. Go to <about:debugging#/runtime/this-firefox>
+2. Click `Load Temporary Add-on...` and select `./build/jsawpuzzle.firefox/manifest.json`
+
+### Adding to Firefox
+
+> Unsigned extensions can only be added to Firefox Developer Edition or Firefox Nightly.
+
+1. Install Firefox Developer Edition or Firefox Nightly
+2. Go to <about:config>
+3. Set `xpinstall.signatures.required` to `false`
+4. Install `web-ext` by running `npm install --global web-ext` or use an alternative method from <https://github.com/mozilla/web-ext>
+5. Open a terminal in the root directory of this project and run `web-ext build --source-dir "./build/jsawpuzzle.firefox" --artifacts-dir "./build/web-ext-artifacts"`
+6. Go to <about:addons>
+7. Click the gear in the top right
+8. Click `Install Add-on From File...` and select `./build/web-ext-artifacts/jsaw_puzzle-1.0.zip`
 
 ## Motivation
 

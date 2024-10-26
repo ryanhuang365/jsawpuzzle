@@ -339,6 +339,9 @@ async function fetchRandomPicture(source) {
     case 'publicdomainpictures':
         module = await import(`./feeds/publicdomainpictures.js`);
         break;
+    case 'waifuim':
+        module = await import(`./feeds/waifuim.js`);
+        break;
     }
     const picture = await module.getRandomPicture();
     if ( picture instanceof Object === false ) { return; }

@@ -15,7 +15,8 @@
   "description": "__MSG_extShortDesc__",
   "host_permissions": [
       "https://commons.wikimedia.org/*",
-      "https://*.publicdomainpictures.net/*"
+      "https://*.publicdomainpictures.net/*",
+      "https://www.waifu.im/*"
   ],
   "icons": {
     "16": "/images/icon-16.png",
