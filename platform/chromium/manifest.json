@@ -18,7 +18,8 @@
       "https://*.publicdomainpictures.net/*",
       "https://www.waifu.im/*",
       "https://api.waifu.pics/*",
-      "https://pic.re/*"
+      "https://pic.re/*",
+      "https://api.nekosapi.com/*"
   ],
   "icons": {
     "16": "/images/icon-16.png",

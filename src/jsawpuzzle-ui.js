@@ -348,6 +348,9 @@ async function fetchRandomPicture(source) {
     case 'picre':
         module = await import(`./feeds/picre.js`);
         break;
+    case 'nekosapi':
+        module = await import(`./feeds/nekosapi.js`);
+        break;
     }
     const picture = await module.getRandomPicture();
     if ( picture instanceof Object === false ) { return; }
