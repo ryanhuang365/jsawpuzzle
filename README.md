@@ -29,6 +29,8 @@ The extension can fetch random pictures from different feeds. Currently it can f
 
 At the command line, type `make firefox` or `make chromium` to build the extension for either Firefox or Chromium. A `jsawpuzzle.firefox` or `jsawpuzzle.chromium` folder will appear under `./build/`, which can be side-loaded as an extension in Firefox or Chromium.
 
+> On Windows, use WSL to `make`. There might be the error `/usr/bin/env: ‘bash\r’: No such file or directory` based on git autocrlf settings. To fix this, run `sed -i $'s/\r$//' ./tools/copy-common-files.sh && sed -i $'s/\r$//' ./tools/make-chromium.sh && sed -i $'s/\r$//' ./tools/make-firefox.sh`
+
 ### Adding to Chrome
 
 1. Go to <chrome://extensions/>
